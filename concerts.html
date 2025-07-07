@@ -2,37 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Concerts</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grimspike - Concerts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="navbar">
-    <img src="grimspike.png" alt="Grimspike Logo" class="logo">
-    <ul class="nav-menu">
+<body class="black-bg">
+  <nav class="main-nav">
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
       <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="music.html">Music</a></li>
       <li><a href="merch.html">Merch</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
       <li><a href="vlog.html">Vlog</a></li>
     </ul>
-  </div>
-  <div class="container">
+  </nav>
+
+  <main class="content concerts">
+    <h1>Concert Gallery</h1>
     <div class="concert-gallery">
-      <img src="concert1.png" style="width:30%; margin-right:1%;">
-      <img src="concert2.png" style="width:30%; margin-right:1%;">
-      <img src="concert3.png" style="width:30%;">
+      <img src="concert1.png" alt="Concert Photo 1" />
+      <img src="concert2.png" alt="Concert Photo 2" />
+      <img src="concert3.png" alt="Concert Photo 3" />
     </div>
-    <h2 style="text-align:center;">Past Concerts</h2>
-    <p style="text-align:center;">June 16, 2025 – Los Angeles, CA<br>
-    June 18, 2025 – Phoenix, AZ<br>
-    June 20, 2025 – Albuquerque, NM</p>
-    <h2 style="text-align:center;">Upcoming Dates (TBA)</h2>
-    <p style="text-align:center;">Austin, TX – TBA<br>
-    Denver, CO – TBA<br>
-    Seattle, WA – TBA</p>
-    <h3 style="text-align:center; color:red;">European Tour in planning!</h3>
-  </div>
+
+    <section class="concert-dates">
+      <h2>Past Concerts</h2>
+      <ul>
+        <li>June 16, 2025 – Los Angeles, CA</li>
+        <li>June 10, 2025 – Austin, TX</li>
+        <li>May 29, 2025 – Phoenix, AZ</li>
+        <li>May 15, 2025 – Nashville, TN</li>
+        <li>May 1, 2025 – Kansas City, MO</li>
+      </ul>
+
+      <h2>Upcoming Shows</h2>
+      <ul>
+        <li>Atlanta, GA – Date TBA</li>
+        <li>Chicago, IL – Date TBA</li>
+        <li>Denver, CO – Date TBA</li>
+        <li>New York, NY – Date TBA</li>
+        <li>Portland, OR – Date TBA</li>
+      </ul>
+
+      <p class="tour-note">European tour planning in progress...</p>
+    </section>
+  </main>
 </body>
 </html>
