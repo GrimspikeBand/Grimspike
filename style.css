@@ -1,28 +1,86 @@
 
-body {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
+body.black-bg {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
 }
-.nav-menu {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #000;
-  padding: 20px;
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  width: 200px;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.main-nav ul {
   list-style: none;
+  padding: 0;
   margin: 0;
 }
-.nav-menu li {
-  margin-left: 20px;
+
+.main-nav ul li {
+  margin: 10px 0;
+  text-align: center;
 }
-.nav-menu a {
+
+.main-nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
-.nav-menu a:hover,
-.nav-menu .active {
+
+.main-nav ul li a:hover {
   color: red;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.logo {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+.concert-gallery img {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.concert-dates ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vlog-post {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.vlog-post img {
+  width: 200px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.bio-member {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.bio-member img {
+  width: 250px;
+  margin-right: 20px;
+  object-fit: cover;
 }

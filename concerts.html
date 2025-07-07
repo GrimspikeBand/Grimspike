@@ -1,65 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Grimspike – Concerts</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .concert-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 30px;
-    }
-    .concert-gallery img {
-      width: 30%;
-      height: auto;
-      border-radius: 10px;
-    }
-    .concert-dates {
-      text-align: center;
-      padding: 20px;
-      font-size: 18px;
-    }
-    .concert-dates p {
-      margin: 8px 0;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grimspike - Concerts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-  
-<header>
-  <nav>
-    <ul class="nav-menu">
+<body class="black-bg">
+  <nav class="main-nav">
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
       <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="music.html">Music</a></li>
       <li><a href="merch.html">Merch</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
       <li><a href="vlog.html">Vlog</a></li>
     </ul>
   </nav>
-</header>
 
-  <div class="concert-gallery">
-    <img src="concert01.png" alt="Concert 1">
-    <img src="concert02.png" alt="Concert 2">
-    <img src="concert03.png" alt="Concert 3">
-  </div>
+  <main class="content concerts">
+    <h1>Concert Gallery</h1>
+    <div class="concert-gallery">
+      <img src="concert1.png" alt="Concert Photo 1" />
+      <img src="concert2.png" alt="Concert Photo 2" />
+      <img src="concert3.png" alt="Concert Photo 3" />
+    </div>
 
-  <div class="concert-dates">
-    <p>2025.06.16 – Los Angeles, CA</p>
-    <p>2025.06.03 – Albuquerque, NM</p>
-    <p>2025.05.20 – Tacoma, WA</p>
-    <p>2025.04.11 – Little Rock, AR</p>
-    <p>2025.03.09 – Reno, NV</p>
-    <br>
-    <p>Buffalo, NY – TBA</p>
-    <p>Santa Fe, NM – TBA</p>
-    <p>Boise, ID – TBA</p>
-    <br>
-    <p><strong>European tour – coming soon!</strong></p>
-  </div>
+    <section class="concert-dates">
+      <h2>Past Concerts</h2>
+      <ul>
+        <li>June 16, 2025 – Los Angeles, CA</li>
+        <li>June 10, 2025 – Austin, TX</li>
+        <li>May 29, 2025 – Phoenix, AZ</li>
+        <li>May 15, 2025 – Nashville, TN</li>
+        <li>May 1, 2025 – Kansas City, MO</li>
+      </ul>
+
+      <h2>Upcoming Shows</h2>
+      <ul>
+        <li>Atlanta, GA – Date TBA</li>
+        <li>Chicago, IL – Date TBA</li>
+        <li>Denver, CO – Date TBA</li>
+        <li>New York, NY – Date TBA</li>
+        <li>Portland, OR – Date TBA</li>
+      </ul>
+
+      <p class="tour-note">European tour planning in progress...</p>
+    </section>
+  </main>
 </body>
 </html>
