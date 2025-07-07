@@ -3,39 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Music</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Grimspike | Music</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .album {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 2rem;
+    }
+    .album img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .album-details {
+      flex: 1;
+    }
+    .album h2 {
+      margin-top: 0;
+    }
+    .music-links a {
+      margin-right: 1rem;
+      color: red;
+      text-decoration: none;
+    }
+    .coming-soon {
+      font-style: italic;
+      color: gray;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <img src="grimspike.png" alt="Grimspike Logo" class="logo">
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
-      <li><a href="merch.html">Merch</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
-    </ul>
-  </div>
-  <div class="container">
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="grimspike.png" alt="GRIMSPIKE logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="merch.html">Merch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main style="padding: 2rem;">
     <h1>Discography</h1>
-    <div class="album">
-      <img src="00 - Lost and Found LP.jpg" alt="Lost and Found" style="float:left; width:200px; margin-right:20px;">
-      <h2>Lost And Found (2023)</h2>
-      <ol>
-        <li>Cash Rules Everything</li>
-        <li>Chasin' Chicks</li>
-        <li>Street Symphony</li>
-        <li>Lick My DICK</li>
-        <li>Sex Bot</li>
-      </ol>
-      <p>
-        <a href="https://open.spotify.com/album/5suNZWegsZlJ0QLkvzwRo2">Spotify</a> | 
-        <a href="https://music.apple.com/us/album/lost-and-found-2023-ep/1824790961">Apple Music</a> |
-        <a href="https://www.youtube.com/watch?v=uykxSVRFObE&list=OLAK5uy_mEn9CKxveb0jtB6J9d0xzf9Kmc05ZWD9k">YouTube</a>
-      </p>
-    </div>
-  </div>
+
+    <section class="album">
+      <img src="00 - Lost and Found LP.jpg" alt="Lost and Found">
+      <div class="album-details">
+        <h2>Lost and Found (2023)</h2>
+        <ol>
+          <li>Cash Rules Everything</li>
+          <li>Chasin' Chicks</li>
+          <li>Street Symphony</li>
+          <li>Lick My DICK</li>
+          <li>Sex Bot</li>
+        </ol>
+        <div class="music-links">
+          <a href="https://open.spotify.com/album/5suNZWegsZlJ0QLkvzwRo2" target="_blank">Spotify</a>
+          <a href="https://music.apple.com/us/album/lost-and-found-2023-ep/1824790961" target="_blank">Apple Music</a>
+          <a href="https://www.youtube.com/watch?v=uykxSVRFObE&list=OLAK5uy_mEn9CKxveb0jtB6J9d0xzf9Kmc05ZWD9k" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="album">
+      <img src="00 - The First Roast.jpg" alt="The First Roast">
+      <div class="album-details">
+        <h2>The First Roast (2024)</h2>
+        <ol>
+          <li>Crown Plastic</li>
+          <li>Run Bitch</li>
+          <li>King For a Night (feat Pueblo Diaz)</li>
+          <li>Wall Street Wreck</li>
+          <li>Catfish Crew</li>
+          <li>Hollywood Shade</li>
+          <li>Bonus – BOOM BOOM Acoustic</li>
+        </ol>
+        <div class="music-links">
+          <a href="https://open.spotify.com/album/7oFJ5qqShYXzv29PN9jWTg" target="_blank">Spotify</a>
+          <a href="https://music.apple.com/us/album/the-firs-roast/1824629885" target="_blank">Apple Music</a>
+          <a href="https://www.youtube.com/watch?v=st1RJpLIXzE&list=OLAK5uy_nGi49Xrt4ftHsBJCygvdnYVqzUyzAwlzs" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="album">
+      <img src="00 - 04 - Acoustic and Alternative.jpg" alt="Acoustic and Alternative">
+      <div class="album-details">
+        <h2>Acoustic and Alternative (2025)</h2>
+        <ol>
+          <li>Bag Of Trash</li>
+          <li>Boom Boom Alternative</li>
+          <li>Cash Rules Everything Acoustic Live</li>
+          <li>Sex Bot Acoustic Live</li>
+          <li>Lick My Dick Acoustic Live</li>
+          <li>EAT, SLEEP, FUCK, REPEAT Acoustic Live</li>
+        </ol>
+        <div class="music-links">
+          <a href="https://open.spotify.com/album/1XTiFXRCpu0nR8r1sy9iPj" target="_blank">Spotify</a>
+          <a href="https://www.youtube.com/watch?v=LrsWctGuGss&list=OLAK5uy_kPO_gjlKPZpeSVNAee-nn4ngD68B8gEd0" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="album">
+      <img src="00 - 03 - Plastic Emotions.jpg" alt="Plastic Emotions">
+      <div class="album-details">
+        <h2>Plastic Emotions (2025)</h2>
+        <p class="coming-soon">Coming soon...</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Grimspike. All rights reserved.</p>
+  </footer>
 </body>
 </html>

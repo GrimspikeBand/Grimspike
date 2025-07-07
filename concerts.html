@@ -3,36 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Concerts</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Grimspike | Concerts</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .concerts {
+      text-align: center;
+      color: white;
+      margin: 2rem auto;
+    }
+    .concerts h2 {
+      margin-top: 2rem;
+    }
+    .concerts p {
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <img src="grimspike.png" alt="Grimspike Logo" class="logo">
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
-      <li><a href="merch.html">Merch</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="concert-gallery">
-      <img src="concert1.png" style="width:30%; margin-right:1%;">
-      <img src="concert2.png" style="width:30%; margin-right:1%;">
-      <img src="concert3.png" style="width:30%;">
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="grimspike.png" alt="GRIMSPIKE logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="merch.html">Merch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="concerts">
+    <div class="gallery">
+      <img src="concert01.png" alt="Concert 1">
+      <img src="concert02.png" alt="Concert 2">
+      <img src="concert03.png" alt="Concert 3">
     </div>
-    <h2 style="text-align:center;">Past Concerts</h2>
-    <p style="text-align:center;">June 16, 2025 – Los Angeles, CA<br>
-    June 18, 2025 – Phoenix, AZ<br>
-    June 20, 2025 – Albuquerque, NM</p>
-    <h2 style="text-align:center;">Upcoming Dates (TBA)</h2>
-    <p style="text-align:center;">Austin, TX – TBA<br>
-    Denver, CO – TBA<br>
-    Seattle, WA – TBA</p>
-    <h3 style="text-align:center; color:red;">European Tour in planning!</h3>
-  </div>
+
+    <h2>Past Shows</h2>
+    <p>June 25, 2025 – Lawrence</p>
+    <p>June 12, 2025 – Bozeman</p>
+    <p>June 10, 2025 – Cedar Rapids</p>
+    <p>June 09, 2025 – Santa Fe</p>
+    <p>June 05, 2025 – Denton</p>
+    <p>June 01, 2025 – Rapid City</p>
+
+    <h2>Upcoming Shows</h2>
+    <p>Topeka – TBA</p>
+    <p>Flagstaff – TBA</p>
+    <p>Chico – TBA</p>
+    <p>Missoula – TBA</p>
+
+    <h3 style="margin-top: 2rem;">European Tour – TBA</h3>
+  </main>
+  <footer>
+    <p>&copy; 2025 Grimspike. All rights reserved.</p>
+  </footer>
 </body>
 </html>

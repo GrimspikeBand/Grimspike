@@ -3,24 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grimspike</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Grimspike | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+    }
+    .hero h1 {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: red;
+      padding: 0.5rem 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    header {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <img src="grimspike.png" alt="Grimspike Logo" class="logo">
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
-      <li><a href="merch.html">Merch</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
-    </ul>
-  </div>
-  <div class="hero">
-    <img src="Band-photo 01.png" alt="Band" class="hero-image">
-    <div class="hero-text">Music That Cuts Like a Blade</div>
-  </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="grimspike.png" alt="GRIMSPIKE logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="merch.html">Merch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="Band-photo 01.png" alt="Grimspike Band">
+      <h1>Music That Cuts Like a Blade</h1>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Grimspike. All rights reserved.</p>
+  </footer>
 </body>
 </html>
