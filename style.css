@@ -1,86 +1,64 @@
-
-body.black-bg {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Orbitron', sans-serif;
+body {
   margin: 0;
-  padding: 0;
-}
-
-.main-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  width: 200px;
-  height: 100vh;
-  padding-top: 20px;
-}
-
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.main-nav ul li {
-  margin: 10px 0;
-  text-align: center;
-}
-
-.main-nav ul li a {
+  background-color: black;
+  font-family: 'Arial Black', sans-serif;
   color: white;
-  text-decoration: none;
-  font-size: 18px;
 }
 
-.main-nav ul li a:hover {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 40px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu li a:hover {
   color: red;
 }
 
-.content {
-  margin-left: 220px;
-  padding: 20px;
-}
-
 .logo {
-  width: 300px;
-  display: block;
-  margin: 20px auto;
+  height: 80px;
 }
 
-.concert-gallery img {
-  width: 30%;
-  margin-right: 10px;
+.hero {
+  position: relative;
+  text-align: center;
 }
 
-.concert-dates ul {
-  list-style: none;
-  padding-left: 0;
+.hero-image {
+  width: 100%;
+  height: auto;
 }
 
-.vlog-post {
-  display: flex;
-  align-items: flex-start;
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px 40px;
+}
+
+.album, .bio-member, .concert-gallery img, .vlog-entry {
   margin-bottom: 40px;
-  padding-left: 20px;
-}
-
-.vlog-post img {
-  width: 200px;
-  margin-right: 20px;
-  object-fit: cover;
-}
-
-.bio-member {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  padding-left: 20px;
-}
-
-.bio-member img {
-  width: 250px;
-  margin-right: 20px;
-  object-fit: cover;
 }
