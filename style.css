@@ -1,53 +1,66 @@
 
 body {
-    margin: 0;
-    background-color: black;
-    font-family: 'Arial', sans-serif;
-    color: white;
+  margin: 0;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-.menu {
-    list-style: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    padding: 0;
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 120px;
 }
 
-.menu li {
-    margin: 10px 0;
+.navbar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.menu a:hover {
-    color: red;
+.navbar li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.hero-container {
-    position: relative;
-    text-align: center;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: red;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
 }
 
 .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-text {
-    position: absolute;
-    top: 40%; /* feljebb tolt pozíció */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: red;
-    font-size: 2.5em;
-    background-color: black;
-    padding: 10px 20px;
-    border: 3px solid black;
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: red;
+  background-color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-size: 32px;
+  font-weight: bold;
 }
