@@ -1,16 +1,17 @@
 
 body {
-    margin: 0;
     background-color: black;
-    font-family: Arial, sans-serif;
     color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
     position: absolute;
     top: 20px;
     left: 20px;
-    height: 80px;
+    width: 100px;
 }
 
 .menu {
@@ -19,52 +20,36 @@ body {
     right: 30px;
 }
 
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.menu ul li a {
+.menu a {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     font-size: 18px;
     transition: color 0.3s;
 }
 
-.menu ul li a:hover, .menu ul li a.active {
+.menu a:hover {
     color: red;
 }
 
 .hero {
     position: relative;
-    width: 100%;
+    text-align: center;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .hero-text {
     position: absolute;
-    bottom: 140px;
-    width: 100%;
-    text-align: center;
-}
-
-.hero-text h1 {
-    display: inline-block;
-    background-color: black;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: red;
+    font-size: 2.5em;
     padding: 10px 20px;
-    font-size: 30px;
-    font-weight: bold;
     border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
 }
