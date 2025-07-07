@@ -6,20 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Grimspike – Concerts</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #000;
+      padding: 20px;
+      list-style: none;
+      margin: 0;
+    }
+    .nav-menu li {
+      margin-left: 20px;
+    }
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .nav-menu a:hover, .nav-menu .active {
+      color: red;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 0;
+    }
+    .gallery img {
+      width: 30%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .concert-dates {
+      text-align: center;
+      padding: 20px;
+    }
+    .concert-dates h2 {
+      color: red;
+    }
+    .concert-dates p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+  </style>
 </head>
-<body class="dark">
+<body>
   <header>
     <nav>
-      
-<ul class="nav-menu">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="music.html">Music</a></li>
-  <li><a href="bio.html">Bio</a></li>
-  <li><a href="concerts.html">Concerts</a></li>
-  <li><a href="merch.html">Merch</a></li>
-  <li><a href="vlog.html">Vlog</a></li>
-</ul>
-
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="music.html">Music</a></li>
         <li><a href="bio.html">Bio</a></li>
@@ -30,36 +71,29 @@
     </nav>
   </header>
 
-  <main class="concerts-container">
-    <h1>Live Shows</h1>
+  <section class="gallery">
+    <img src="Concert 001.png" alt="Concert 1">
+    <img src="Concert 002.png" alt="Concert 2">
+    <img src="Concert 003.png" alt="Concert 3">
+  </section>
 
-    <div class="concert-gallery">
-      <img src="concert_01.png" alt="Concert 1">
-      <img src="concert_02.png" alt="Concert 2">
-      <img src="concert_03.png" alt="Concert 3">
-    </div>
+  <section class="concert-dates">
+    <h2>Past Shows</h2>
+    <p>2025.06.16 – Los Angeles, CA</p>
+    <p>2025.06.10 – Denver, CO</p>
+    <p>2025.06.04 – Austin, TX</p>
+    <p>2025.05.27 – Tulsa, OK</p>
+    <p>2025.05.21 – Sacramento, CA</p>
+    <p>2025.05.14 – Albuquerque, NM</p>
 
-    <section class="concert-dates">
-      <ul>
-        <li>2025.06.16 – Los Angeles, CA</li>
-        <li>2025.06.10 – Tempe, AZ</li>
-        <li>2025.05.29 – Reno, NV</li>
-        <li>2025.05.25 – Tulsa, OK</li>
-        <li>2025.05.18 – Omaha, NE</li>
-        <li>2025.05.12 – Grand Rapids, MI</li>
-      </ul>
+    <h2>Upcoming Cities (Dates TBA)</h2>
+    <p>Atlanta, GA</p>
+    <p>Salt Lake City, UT</p>
+    <p>Seattle, WA</p>
+    <p>Phoenix, AZ</p>
+    <p>Minneapolis, MN</p>
 
-      <h3>Upcoming Cities (dates TBA):</h3>
-      <ul>
-        <li>Houston, TX</li>
-        <li>Newark, NJ</li>
-        <li>Spokane, WA</li>
-        <li>Santa Fe, NM</li>
-        <li>Birmingham, AL</li>
-      </ul>
-
-      <h3>European Tour: In Planning</h3>
-    </section>
-  </main>
+    <h2>European Tour – Planning in Progress</h2>
+  </section>
 </body>
 </html>
