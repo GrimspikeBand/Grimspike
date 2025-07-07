@@ -8,80 +8,66 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .vlog-container {
-      padding: 20px;
-      margin: 0 auto;
-      max-width: 1200px;
+      padding: 30px;
     }
-    .vlog-post {
+    .vlog-entry {
       display: flex;
       align-items: flex-start;
-      gap: 20px;
       margin-bottom: 40px;
     }
-    .vlog-post img {
-      width: 250px;
+    .vlog-entry img {
+      width: 300px;
       height: auto;
-      border-radius: 4px;
+      margin-right: 20px;
     }
-    .vlog-post .content {
-      flex: 1;
+    .vlog-text {
+      max-width: 600px;
     }
-    .vlog-post h2 {
-      color: red;
-      margin: 0 0 10px;
-    }
-    .vlog-post p {
-      color: white;
-      line-height: 1.5;
-    }
-    .vlog-post iframe {
-      margin-top: 10px;
-      width: 100%;
-      max-width: 560px;
+    iframe {
+      width: 560px;
       height: 315px;
+      margin-top: 10px;
     }
   </style>
 </head>
-<body class="dark">
-  <header>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="concerts.html">Concerts</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="vlog.html" class="active">Vlog</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+  
+<header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="vlog.html">Vlog</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main class="vlog-container">
+  <div class="vlog-container">
+    <div class="vlog-entry">
+      <iframe src="https://www.youtube.com/embed/Pm9ouj5eFFA" title="Acoustic Night at The Vic" frameborder="0" allowfullscreen></iframe>
+      <div class="vlog-text">
+        <h2>GrimSpike’s Epic Acoustic Night at The Vic</h2>
+        <p>GrimSpike’s Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged! 🎸🔥 
+        The crowd went wild — and now you can stream their <strong>Acoustic and Alternative</strong> album on Spotify and more.
+        </p>
+        <p>The concert was a massive success and parts of the performance will be released gradually. A full-length video is still in production!</p>
+        <p><em>Date: 2025.05.16</em></p>
+      </div>
+    </div>
 
-    <div class="vlog-post">
+    <div class="vlog-entry">
       <img src="GS 014 Catfish .jpg" alt="Catfish Track">
-      <div class="content">
-        <h2>“Yippee Ki-Yay, Motherf***er” – The Song That Shook the Swipe Culture</h2>
-        <p><strong>Date:</strong> 2025-06-01</p>
-        <p>Jessica and RonZ didn’t just write a song — they launched a grenade at fake online personas. Their savage verses in “Yippee Ki-Yay, Motherf***er” took direct aim at the lies behind dating profiles, filters, and virtual facades. The track ignited serious reactions across social media and beyond, with multiple blogs and forums weighing in on its controversial punchlines (though no names have been mentioned).<br><br>
-        With explicit bars calling out both men and women for their dishonesty and cowardice in modern romance, Grimspike once again proves that they’re not afraid to get loud and raw. More than just a song, it’s a public takedown — and you can’t unhear it.<br><br>
-        Stream the track now:</p>
-        <iframe src="https://www.youtube.com/embed/W6E32zVp8LU" frameborder="0" allowfullscreen></iframe>
+      <div class="vlog-text">
+        <h2>Yippee Ki-Yay – The Track That Roasted Online Dating</h2>
+        <p>Jessica and RonZ lit up the internet with this brutal takedown of fake online personas. The track didn’t hold back — and some media circles 
+        (no names) were stirred. The lyrics sparked conversation and backlash alike, proving once again: Grimspike doesn’t pull punches.</p>
+        <p>Watch on <a href="https://www.youtube.com/watch?v=W6E32zVp8LU" target="_blank" style="color:red;">YouTube</a></p>
+        <p><em>Date: 2025.06.01</em></p>
       </div>
     </div>
-
-    <div class="vlog-post">
-      <img src="GS 013 Unplugged.jpg" alt="Unplugged Concert">
-      <div class="content">
-        <h2>Grimspike’s Epic Acoustic Night at The Vic – Hear It on Spotify!</h2>
-        <p><strong>Date:</strong> 2025-05-16</p>
-        <p>GrimSpike’s Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged session. The night was intense, raw, and full of emotion as fans packed the room and sang along to every stripped-back note. <br><br>
-        The band promised this was just the beginning — the recorded material will be released in segments, and a full behind-the-scenes video is also in production. The energy from that night lives on in their latest LP: “Acoustic and Alternative,” now streaming on Spotify and all major platforms.<br><br>
-        Check out the teaser here:</p>
-        <iframe src="https://www.youtube.com/embed/Pm9ouj5eFFA" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-
-  </main>
+  </div>
 </body>
 </html>

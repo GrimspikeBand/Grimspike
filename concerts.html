@@ -2,98 +2,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Grimspike – Concerts</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-menu {
-      display: flex;
-      justify-content: flex-end;
-      background-color: #000;
-      padding: 20px;
-      list-style: none;
-      margin: 0;
-    }
-    .nav-menu li {
-      margin-left: 20px;
-    }
-    .nav-menu a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    .nav-menu a:hover, .nav-menu .active {
-      color: red;
-    }
-    .gallery {
+    .concert-gallery {
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 30px 0;
+      padding: 30px;
     }
-    .gallery img {
+    .concert-gallery img {
       width: 30%;
       height: auto;
-      border-radius: 6px;
+      border-radius: 10px;
     }
     .concert-dates {
       text-align: center;
       padding: 20px;
-    }
-    .concert-dates h2 {
-      color: red;
+      font-size: 18px;
     }
     .concert-dates p {
-      margin: 6px 0;
-      font-size: 16px;
+      margin: 8px 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="concerts.html" class="active">Concerts</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="vlog.html">Vlog</a></li>
-      </ul>
-    </nav>
-  </header>
+  
+<header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="vlog.html">Vlog</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section class="gallery">
-    <img src="Concert 001.png" alt="Concert 1">
-    <img src="Concert 002.png" alt="Concert 2">
-    <img src="Concert 003.png" alt="Concert 3">
-  </section>
+  <div class="concert-gallery">
+    <img src="concert01.png" alt="Concert 1">
+    <img src="concert02.png" alt="Concert 2">
+    <img src="concert03.png" alt="Concert 3">
+  </div>
 
-  <section class="concert-dates">
-    <h2>Past Shows</h2>
+  <div class="concert-dates">
     <p>2025.06.16 – Los Angeles, CA</p>
-    <p>2025.06.10 – Denver, CO</p>
-    <p>2025.06.04 – Austin, TX</p>
-    <p>2025.05.27 – Tulsa, OK</p>
-    <p>2025.05.21 – Sacramento, CA</p>
-    <p>2025.05.14 – Albuquerque, NM</p>
-
-    <h2>Upcoming Cities (Dates TBA)</h2>
-    <p>Atlanta, GA</p>
-    <p>Salt Lake City, UT</p>
-    <p>Seattle, WA</p>
-    <p>Phoenix, AZ</p>
-    <p>Minneapolis, MN</p>
-
-    <h2>European Tour – Planning in Progress</h2>
-  </section>
+    <p>2025.06.03 – Albuquerque, NM</p>
+    <p>2025.05.20 – Tacoma, WA</p>
+    <p>2025.04.11 – Little Rock, AR</p>
+    <p>2025.03.09 – Reno, NV</p>
+    <br>
+    <p>Buffalo, NY – TBA</p>
+    <p>Santa Fe, NM – TBA</p>
+    <p>Boise, ID – TBA</p>
+    <br>
+    <p><strong>European tour – coming soon!</strong></p>
+  </div>
 </body>
 </html>
