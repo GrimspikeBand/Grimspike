@@ -2,30 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grimspike | Bio</title>
+  <title>Grimspike Band – Bio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific styles for Bio */
+    body.bio {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      padding-top: 120px;
+    }
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: 80px;
+      width: auto;
+      z-index: 100;
+    }
+    .bio-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .band-story {
+      text-align: center;
+      margin-bottom: 50px;
+      line-height: 1.6;
+    }
+    .band-story h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .members {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .member-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .member-photo {
+      flex-shrink: 0;
+      width: 150px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .member-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+    .member-info p {
+      margin: 0;
+      line-height: 1.5;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 40px 0;
+    }
+  </style>
 </head>
-<body>
+<body class="bio">
   <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="grimspike.png" alt="GRIMSPIKE logo" />
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="concerts.html">Concerts</a></li>
-        <li><a href="merch.html">Merch</a></li>
-      </ul>
-    </nav>
+    <img src="grimspike-logo.png" alt="Grimspike Logo" class="logo">
   </header>
-  <main>
-    <section class="bio" style="padding: 2rem; max-width: 800px; margin: auto;">
+  <main class="bio-container">
+    <section class="band-story">
       <h1>Grimspike – Music That Cuts Like a Blade</h1>
       <p>Grimspike is not your average band. Their story begins in the raw backstreets of the American urban sprawl, where founding members RonZ and Jack NV met as teenagers. RonZ was born in Mexico to non-Latin parents and moved to the U.S. as a child — the details are hazy, and deliberately so. He grew up on the edge of society, running with street kids, learning early that if you don’t fight to be heard, you’ll be drowned out.</p>
       <p>That’s where he met Jack NV, a Mexican-American kid with a trumpet in his hands and mariachi roots in his blood — though his soul leaned heavy into distortion and rebellion. At 18, they formed Grimspike, driven by a desire to build something louder, dirtier, and more honest than anything around them. Music that punches, provokes, and never apologizes.</p>
@@ -34,9 +82,31 @@
       <p>Grimspike gained a name in the underground scene for their brutally honest lyrics and no-holds-barred attitude. Their songs call out everyone and everything, with a grin and a fist in the air. Sonically, they fuse hardcore and gangster rap with heavy guitar riffs, Latin-infused trumpet lines, violins, synths, and a sense of melody that cuts through the noise. They don’t blend in — they stand out. Loudly.</p>
       <p>This isn’t just a band. It’s survival. A scream in the silence. A raised middle finger to the world.</p>
     </section>
+    <section class="members">
+      <div class="member-item">
+        <img src="jessica-grown.jpg" alt="Jessica Grown" class="member-photo">
+        <div class="member-info">
+          <h3>🎤 Jessica Grown – vocals</h3>
+          <p>Jessica’s voice cuts like a blade, but her story cuts even deeper. Abandoned as a toddler at a church door, she was bounced from one foster home to another. Her past is a locked vault, but her voice opens it wide. With sharp lyrics, haunting tone, and a stage presence you can’t ignore, she became the soul of Grimspike. She’s not just the frontwoman — she’s the storm, the mouthpiece, and the fire.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="member-item">
+        <img src="ronz.jpg" alt="RonZ" class="member-photo">
+        <div class="member-info">
+          <h3>🎧 RonZ – producer / rap vocals</h3>
+          <p>Born in Mexico to mysterious roots, RonZ was raised in the shadows of America’s concrete sprawl. He’s the architect of chaos — producing, mixing, and rapping with raw power. His body is inked like a war map, and his mind? Sharper than his blade-like beats. RonZ brings the street into every bar and the pain into every pulse.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="member-item">
+        <img src="jack-nv.jpg" alt="Jack NV" class="member-photo">
+        <div class="member-info">
+          <h3>🎺 Jack NV – trumpet / beats</h3>
+          <p>Jack NV is the bridge between past and present. A second-generation Mexican-American, raised on mariachi but baptized in punk. His trumpet howls like a siren through the band’s sound, and his beats hit like a riot. He’s the misfit heartbeat of Grimspike — loud, proud, and impossible to miss.</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Grimspike. All rights reserved.</p>
-  </footer>
 </body>
 </html>
