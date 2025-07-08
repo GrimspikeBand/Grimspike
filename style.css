@@ -80,3 +80,64 @@ footer {
   font-size: 12px;
   text-shadow: 1px 1px 3px black;
 }
+/* ——— Music page: albumok flex­szerű elrendezése ——— */
+.album-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;            /* terek az albumok közt */
+  max-width: 900px;     /* ne nyúljanak a szélükig */
+  margin: 0 auto;       /* középre */
+  padding: 20px;
+}
+
+.album-item {
+  display: flex;
+  gap: 20px;            /* borító és tartalom közt */
+  align-items: flex-start;
+  background-color: rgba(0,0,0,0.5); /* választható sötét háttér */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.album-cover {
+  flex-shrink: 0;
+  width: 180px;         /* fix szélesség */
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.album-content {
+  flex: 1;
+  color: #fff;
+}
+
+.album-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.tracklist {
+  margin: 0 0 15px 20px; /* behúzás a listának */
+  padding: 0;
+  list-style: disc;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  background-color: #e00;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color .2s;
+}
+.links a:hover {
+  background-color: #c00;
+}
