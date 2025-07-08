@@ -24,12 +24,13 @@ body, html {
 
 /* Grimspike logó */
 .logo {
-  position: fixed;   /* így marad a helyén scrollozásnál is */
+  position: fixed;   /* vagy absolute, ha csak a headeren belül kell maradjon */
   top: 20px;
   left: 20px;
-  height: 80px;      /* kisebb, de arányos */
   width: auto;
+  height: 80px;      /* alakítsd 60–120px közt, ahogy szép */
   z-index: 100;      /* minden fölött */
+
 }
 
 /* Menü */
