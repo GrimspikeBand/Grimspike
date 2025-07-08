@@ -58,7 +58,7 @@ body, html {
 /* Középső felirat */
 .center-text {
   position: absolute;
-  top: 45%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
