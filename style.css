@@ -1,61 +1,60 @@
 
-/* General Body Style */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 
-/* Header Logo */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 120px;
+  height: 60px;
 }
 
-/* Navigation Menu */
-nav {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* Band Photo */
-#band-photo {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 80px auto 20px auto;
+nav ul li a:hover {
+  color: red;
 }
 
-/* Main Slogan Text */
-#main-text {
-    text-align: center;
-    color: red;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-shadow: 2px 2px 0 black;
-    border: 2px solid black;
-    display: inline-block;
-    padding: 10px 20px;
+.hero {
+  position: relative;
+  text-align: center;
 }
 
-/* Footer or Copyright Notice */
-footer {
-    text-align: center;
-    color: gray;
-    font-size: 12px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blade-title {
+  font-size: 2.5rem;
+  color: red;
+  text-shadow: 2px 2px 4px black;
 }
