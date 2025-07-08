@@ -5,6 +5,8 @@ body, html {
   height: 100%;
   font-family: Arial, sans-serif;
   position: relative;
+    background-color: #000;
+  color: #fff;
 }
 
 /* Háttérkép */
@@ -22,11 +24,12 @@ body, html {
 
 /* Grimspike logó */
 .logo {
-  position: fixed;
+  position: fixed;   /* így marad a helyén scrollozásnál is */
   top: 20px;
   left: 20px;
-  height: 120px; /* Kb. kétszeres méret */
-  z-index: 10;
+  height: 80px;      /* kisebb, de arányos */
+  width: auto;
+  z-index: 100;      /* minden fölött */
 }
 
 /* Menü */
