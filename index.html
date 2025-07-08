@@ -1,63 +1,76 @@
-<!DOCTYPE html>
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grimspike | Home</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .hero {
-      position: relative;
-      text-align: center;
-    }
-    .hero img {
-      width: 100%;
-      max-height: 90vh;
-      object-fit: cover;
-    }
-    .hero h1 {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: black;
-      color: red;
-      padding: 0.5rem 1rem;
-      font-size: 2rem;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    header {
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grimspike - Hardcore rap and heavy riffs. Check out our music, bio, concerts, and vlog.">
+    <title>Grimspike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Helyettesítsd a saját faviconoddal -->
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="grimspike.png" alt="GRIMSPIKE logo">
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="concerts.html">Concerts</a></li>
-        <li><a href="merch.html">Merch</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <img src="Band-photo 01.png" alt="Grimspike Band">
-      <h1>Music That Cuts Like a Blade</h1>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Grimspike. All rights reserved.</p>
-  </footer>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://grimspikeband.github.io/Grimspike/images/grimspikelogo.png" alt="Grimspike Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="vlog.html">Vlog</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="concerts.html">Concerts</a></li>
+                <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://grimspikeband.github.io/Grimspike/images/Band-photo%2001.png" alt="Grimspike band photo" class="hero-image">
+            <h1>Music That Cuts Like a Blade</h1>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Grimspike. All rights reserved.</p>
+    </footer>
 </body>
 </html>
