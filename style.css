@@ -1,82 +1,82 @@
-/* Teljes képernyős háttér */
-body, html {
+/* Általános beállítások */
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: Arial, sans-serif;
-  position: relative;
+  background-color: black;
+  color: white;
 }
 
-/* Háttérkép */
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("Band-photo 01.png");
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
-}
-
-/* Grimspike logó */
+/* Logó */
 .logo {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
-  height: 120px; /* Kb. kétszeres méret */
+  width: 120px;
   z-index: 10;
 }
 
-/* Menü */
+/* Vízszintes menüsor jobb felső sarokban */
 .menu {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 20px;
-  border-radius: 8px;
   z-index: 10;
 }
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-.menu li a {
+.menu a {
   color: white;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-/* Középső felirat */
-.center-text {
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Főoldal: középső felirat */
+.centered-text {
   position: absolute;
-  top: 53%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
   color: red;
-  border: 2px solid black;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
+  font-size: 48px;
   font-weight: bold;
+  border: 3px solid black;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 
-/* Alsó szöveg */
-footer {
+/* Alsó copyright szöveg */
+.footer-text {
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
-  color: white;
   font-size: 12px;
-  text-shadow: 1px 1px 3px black;
+  color: white;
+  z-index: 5;
+}
+
+/* Album oldalon albumképek */
+.album-cover {
+  width: 300px;
+  max-width: 90%;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Responsive linkek (zene oldalon pl.) */
+.album-links a {
+  color: #9b59b6;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.album-links a:hover {
+  text-decoration: underline;
 }
