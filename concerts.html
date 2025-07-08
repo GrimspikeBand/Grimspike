@@ -6,6 +6,48 @@
   <title>Grimspike | Concerts</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    /* Page-specific styles for Concerts */
+    body.concerts {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      z-index: 100;
+    }
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main.concerts {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
     .gallery {
       display: flex;
       justify-content: center;
@@ -18,31 +60,31 @@
       max-width: 300px;
       border-radius: 8px;
     }
-    .concerts {
-      text-align: center;
-      color: white;
-      margin: 2rem auto;
-    }
-    .concerts h2 {
+    main.concerts h2,
+    main.concerts h3 {
       margin-top: 2rem;
+      margin-bottom: 0.5rem;
     }
-    .concerts p {
+    main.concerts h3 {
+      color: red;
+    }
+    main.concerts p {
       margin: 0.5rem 0;
+      font-size: 1rem;
     }
   </style>
 </head>
-<body>
+<body class="concerts">
   <header>
     <nav>
       <div class="logo">
         <a href="index.html">
-          <img src="grimspike.png" alt="GRIMSPIKE logo">
+          <img src="grimspike.png" alt="Grimspike Logo">
         </a>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="music.html">Music</a></li>
-        <li><a href="#videos">Videos</a></li>
         <li><a href="bio.html">Bio</a></li>
         <li><a href="concerts.html">Concerts</a></li>
         <li><a href="merch.html">Merch</a></li>
@@ -63,6 +105,12 @@
     <p>June 09, 2025 – Santa Fe</p>
     <p>June 05, 2025 – Denton</p>
     <p>June 01, 2025 – Rapid City</p>
+    <p>May 28, 2025 – Lincoln</p>
+    <p>May 20, 2025 – Wichita</p>
+    <p>May 15, 2025 – Little Rock</p>
+    <p>May 10, 2025 – Tulsa</p>
+    <p>May 03, 2025 – Omaha</p>
+    <p>April 25, 2025 – Minneapolis</p>
 
     <h2>Upcoming Shows</h2>
     <p>Topeka – TBA</p>
@@ -70,10 +118,7 @@
     <p>Chico – TBA</p>
     <p>Missoula – TBA</p>
 
-    <h3 style="margin-top: 2rem;">European Tour – TBA</h3>
+    <h3>European Tour – TBA</h3>
   </main>
-  <footer>
-    <p>&copy; 2025 Grimspike. All rights reserved.</p>
-  </footer>
 </body>
 </html>
