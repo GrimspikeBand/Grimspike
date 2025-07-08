@@ -16,7 +16,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Band-photo 01.png'); /* vagy a pontos fájlnév/útvonal */
+  background-image: url('Band-photo 01.png'); /* ← itt kell, hogy pontos legyen a kép fájlneve/útvonala */
   background-size: cover;
   background-position: center;
   z-index: -1;
