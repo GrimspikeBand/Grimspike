@@ -1,93 +1,117 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Grimspike Vlog - Follow our journey with behind-the-scenes stories, videos, and updates.">
-    <title>Grimspike Vlog</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grimspike | Vlog</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body.vlog {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding-top: 120px;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: 80px;
+      width: auto;
+      z-index: 100;
+    }
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .vlog-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .vlog-container h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .vlog-post {
+      margin-bottom: 40px;
+    }
+    .vlog-post h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .post-date {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+    .vlog-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .vlog-post p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .video-embed iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/grimspike.png" alt="Grimspike Logo" onerror="this.src='https://placehold.co/100x60?text=Logo'">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="vlog.html">Vlog</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="concerts.html">Concerts</a></li>
-                <li><a href="merch.html">Merch</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="vlog">
-            <h1>Grimspike Vlog</h1>
-            <article class="vlog-post">
-                <h2>“Catfish Dreams” Sparks Online Dating Controversy!</h2>
-                <p class="post-date">2025.06.01</p>
-                <img src="https://placehold.co/600x400" alt="Catfish Dreams controversy" class="vlog-image">
-                <p>Jessica and RonZ went off on fake profiles and digital clout in their explosive track “Catfish Dreams.” The internet blew up, with bloggers and influencers talking trash and praise alike. The track’s unapologetic lyrics call out catfishers by name and leave no room for filters. Stream it now and watch the world react.</p>
-                <div class="video-embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W6E32zVp8LU" title="Catfish Dreams Vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </article>
-            <article class="vlog-post">
-                <h2>GrimSpike’s Epic Acoustic Night at The Vic – Full Recap!</h2>
-                <p class="post-date">2025.05.16</p>
-                <img src="https://placehold.co/600x400" alt="Grimspike at The Vic Theatre" class="vlog-image">
-                <p>Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged. The crowd went wild — and this video only shows the beginning. Full live footage is being edited now, and the full concert will be released soon in parts!</p>
-                <div class="video-embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pm9ouj5eFFA" title="Acoustic Night at The Vic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Grimspike. All rights reserved.</p>
-    </footer>
+<body class="vlog">
+  <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="vlog.html">Vlog</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+  <main class="vlog-container">
+    <h1>Grimspike Vlog</h1>
+    <article class="vlog-post">
+      <h2>“Catfish Dreams” Sparks Online Dating Controversy!</h2>
+      <p class="post-date">June 1, 2025</p>
+      <img src="https://placehold.co/600x400" alt="Catfish Dreams controversy" class="vlog-image" />
+      <p>Jessica and RonZ went off on fake profiles and digital clout in their explosive track “Catfish Dreams.” The internet blew up, with bloggers and influencers talking trash and praise alike. The track’s unapologetic lyrics call out catfishers by name and leave no room for filters. Stream it now and watch the world react.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/W6E32zVp8LU" title="Catfish Dreams Vlog" allowfullscreen></iframe>
+      </div>
+    </article>
+    <article class="vlog-post">
+      <h2>Grimspike’s Epic Acoustic Night at The Vic – Full Recap!</h2>
+      <p class="post-date">May 16, 2025</p>
+      <img src="https://placehold.co/600x400" alt="Grimspike at The Vic Theatre" class="vlog-image" />
+      <p>Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged. The crowd went wild — and this video only shows the beginning. Full live footage is being edited now, and the full concert will be released soon in parts!</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/Pm9ouj5eFFA" title="Acoustic Night at The Vic" allowfullscreen></iframe>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
