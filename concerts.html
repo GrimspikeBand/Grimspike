@@ -79,7 +79,7 @@
       text-decoration: none;
       font-weight: bold;
     }
-    /* Ensure main container is centered */
+    /* Main container centered */
     main.concerts {
       width: 95%;
       max-width: 800px;
@@ -87,27 +87,30 @@
       padding: 20px;
       text-align: center;
     }
-    .concerts .top-gallery {
+    /* Top gallery flex layout for 3 images */
+    main.concerts .top-gallery {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin-bottom: 2rem;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
-    .concerts .top-gallery img {
-      width: 100%;
-      max-width: 525px;
+    main.concerts .top-gallery img {
+      flex: 1;
+      max-width: calc((100% - 2rem)/3);
+      height: auto;
       border-radius: 8px;
     }
-    .concerts h2,
-    .concerts h3 {
+    /* Headings and text centered */
+    main.concerts h2,
+    main.concerts h3 {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
-    .concerts h3 {
+    main.concerts h3 {
       color: red;
     }
-    .concerts p {
+    main.concerts p {
       margin: 0.5rem 0;
       font-size: 1rem;
     }
