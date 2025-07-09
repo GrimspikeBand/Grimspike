@@ -126,7 +126,7 @@
 <body class="vlog">
   <!-- LOGÓ -->
   <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
-
+  
   <!-- MENÜ -->
   <nav class="menu">
     <ul>
@@ -142,8 +142,7 @@
   <main class="vlog-container">
     <h1>Grimspike Vlog</h1>
 
-    <!-- Post with embedded video, thumbnail only -->
-    <article class="vlog-post">
+    <article class="vlog-post" data-date="2025-06-01">
       <div class="post-media">
         <a href="https://www.youtube.com/shorts/QekyUaaVX_4" target="_blank" rel="noopener">
           <img src="GS 014 Catfish .jpg" alt="Catfish Dreams controversy" />
@@ -157,8 +156,7 @@
       </div>
     </article>
 
-    <!-- Post with embedded video, thumbnail only -->
-    <article class="vlog-post">
+    <article class="vlog-post" data-date="2025-05-16">
       <div class="post-media">
         <a href="https://www.youtube.com/watch?v=Pm9ouj5eFFA" target="_blank" rel="noopener">
           <img src="Acoustic conert.png" alt="Acoustic Night at The Vic" />
@@ -172,6 +170,33 @@
       </div>
     </article>
 
+    <article class="vlog-post" data-date="2025-04-25">
+      <div class="post-media">
+        <a href="https://www.youtube.com/shorts/29dl2RxETZw" target="_blank" rel="noopener">
+          <img src="GS 002 sexbot.jpg" alt="Buy a Sex Bot feature" />
+          <div class="play-button"></div>
+        </a>
+      </div>
+      <div class="post-content">
+        <h2>Jessica Grown Isn’t Your Fantasy — She’s the Fucking Revolution</h2>
+        <p class="post-date">April 25, 2025</p>
+        <p>Originally published by “Sound Riot Magazine” — On April 25, 2025, Grimspike’s Jessica Grown delivered what might be one of the boldest lyrical statements of the year — and maybe of the decade — with her latest verse in the group’s blistering new single, “Buy a Sex Bot.” The track isn’t just a diss. It’s a loaded shotgun pointed squarely at the shallow, hypersexualized lens through which women — especially those in music — are still viewed.</p>
+        <p>“I’m a queen, but y’all treat me like a pawn,<br>
+        Want my body, but my heart? Long gone!”</p>
+        <p>She reclaims her sexuality while eviscerating anyone who assumes ownership of her image. This is the anti-male-gaze anthem we didn’t know we needed, and it’s burning a hole in the internet already.</p>
+        <p>❗ Originally appeared on Sound Riot Magazine — republished with permission in Grimspike’s official vlog.<br>
+        🖤 Stream “Buy a Sex Bot” now on all major platforms.</p>
+      </div>
+    </article>
   </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.vlog-container');
+      const posts = Array.from(container.querySelectorAll('.vlog-post'));
+      posts.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
+      posts.forEach(post => container.appendChild(post));
+    });
+  </script>
 </body>
 </html>
