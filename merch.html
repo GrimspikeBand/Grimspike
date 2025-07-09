@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grimspike | Merch</title>
+  <meta charset="UTF-8">
+  <title>Grimspike Band – Merch</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific styles for Merch */
+    body.merch {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: 80px;
+      width: auto;
+      z-index: 100;
+    }
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .merch-container h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .merch-container p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <img src="grimspike.png" alt="GRIMSPIKE logo">
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="concerts.html">Concerts</a></li>
-        <li><a href="merch.html">Merch</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main style="text-align: center; padding: 5rem;">
-    <h1>COMING SOON</h1>
-    <p>Our official merch will be available here soon. Stay tuned!</p>
+<body class="merch">
+  <img src="grimspike.png" alt="Grimspike Logo" class="logo">
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="vlog.html">Vlog</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+  <main class="merch-container">
+    <h1>Merch Coming Soon</h1>
+    <p>Stay tuned for exclusive Grimspike merchandise!</p>
   </main>
-  <footer>
-    <p>&copy; 2025 Grimspike. All rights reserved.</p>
-  </footer>
 </body>
 </html>
