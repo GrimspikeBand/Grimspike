@@ -1,47 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grimspike | Concerts</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Grimspike Band concerts – past and upcoming shows of the American hardcore/trap/rap/hip-hop group Grimspike." />
-  <meta name="keywords" content="Grimspike concerts, Grimspike tour dates, hardcore concerts, trap concerts, rap shows, hip-hop events" />
-  <meta name="author" content="Grimspike Band" />
-
-  <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://grimspikeband.github.io/Grimspike/concerts.html" />
-  <link rel="alternate" href="https://grimspikeband.github.io/Grimspike/concerts.html" hreflang="en-us" />
-
-  <!-- Open Graph -->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Grimspike | Concerts – Past & Upcoming Shows" />
-  <meta property="og:description" content="Don't miss Grimspike's epic past shows and upcoming concerts across the U.S. and Europe." />
-  <meta property="og:url" content="https://grimspikeband.github.io/Grimspike/concerts.html" />
-  <meta property="og:image" content="https://grimspikeband.github.io/Grimspike/concert1.png" />
-  <meta property="og:site_name" content="Grimspike Band" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@GrimspikeBand" />
-  <meta name="twitter:title" content="Grimspike | Concerts – Past & Upcoming Shows" />
-  <meta name="twitter:description" content="Check out Grimspike’s past and upcoming concerts. Join the hardcore/trap/rap/hip-hop revolution!" />
-  <meta name="twitter:image" content="https://grimspikeband.github.io/Grimspike/concert1.png" />
-
-  <!-- Structured Data (WebPage) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Grimspike | Concerts",
-    "url": "https://grimspikeband.github.io/Grimspike/concerts.html",
-    "description": "Grimspike Band’s past and upcoming concert dates."
-  }
-  </script>
-
   <style>
     /* Page-specific styles for Concerts */
     body.concerts {
@@ -73,67 +36,56 @@
       gap: 20px;
       margin: 0;
       padding: 0;
+      margin-left: auto; /* push menu to right */
     }
     .menu ul li a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
     }
-    /* Main container centered */
-    main.concerts {
-      width: 95%;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-    /* Top gallery flex layout for 3 images */
-    main.concerts .top-gallery {
+    .concerts .top-gallery {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin-bottom: 2rem;
-      flex-wrap: nowrap;
     }
-    main.concerts .top-gallery img {
-      flex: 1;
-      max-width: calc((100% - 2rem)/3);
-      height: auto;
+    .concerts .top-gallery img {
+      width: 100%;
+      max-width: 525px;
       border-radius: 8px;
     }
-    /* Headings and text centered */
-    main.concerts h2,
-    main.concerts h3 {
+    .concerts h2,
+    .concerts h3 {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
+      text-align: center;
     }
-    main.concerts h3 {
+    .concerts h3 {
       color: red;
     }
-    main.concerts p {
+    .concerts p {
       margin: 0.5rem 0;
       font-size: 1rem;
+      text-align: center;
     }
   </style>
 </head>
 <body class="concerts">
-  <!-- LOGO -->
+  <!-- LOGÓ -->
   <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
 
-  <!-- MENU -->
+  <!-- MENÜ -->
   <nav class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="music.html">Music</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
       <li><a href="bio.html">Bio</a></li>
       <li><a href="concerts.html">Concerts</a></li>
       <li><a href="merch.html">Merch</a></li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="concerts"$1>
+  <main>
     <div class="top-gallery">
       <img src="concert1.png" alt="Concert Image 1" />
       <img src="concert2.png" alt="Concert Image 2" />
