@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grimspike – Bio</title>
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-        content="Discover Grimspike’s origins, featuring vocalist Jessica Grown, producer RonZ, and trumpeter Jack NV in this hardcore/trap/rap/hip-hop band bio."/>
-  <meta name="keywords"
-        content="Grimspike, Jessica Grown, RonZ, Jack NV, Jessica, Grown, Ron Z, Jack, NV, vocals, producer, rap vocals, trumpet, hardcore, trap, rap, hip-hop, underground music, band members"/>
-  <meta name="author" content="Grimspike Band"/>
-
-  <!-- Canonical & Alternate -->
-  <link rel="canonical" href="https://grimspikeband.github.io/Grimspike/bio.html"/>
-  <link rel="alternate" href="https://grimspikeband.github.io/Grimspike/bio.html" hreflang="en-us"/>
-
-  <!-- Open Graph -->
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Grimspike – Bio"/>
-  <meta property="og:description"
-        content="Learn about Grimspike’s journey and meet Jessica Grown, RonZ, and Jack NV in their official band bio."/>
-  <meta property="og:url" content="https://grimspikeband.github.io/Grimspike/bio.html"/>
-  <meta property="og:image" content="https://grimspikeband.github.io/Grimspike/grimspike.png"/>
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@GrimspikeBand"/>
-  <meta name="twitter:title" content="Grimspike – Bio"/>
-  <meta name="twitter:description"
-        content="Explore Grimspike’s bio and meet vocalist Jessica Grown, producer RonZ, and trumpeter Jack NV."/>
-  <meta name="twitter:image" content="https://grimspikeband.github.io/Grimspike/grimspike.png"/>
-
-  <!-- Structured Data JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Grimspike",
-    "url": "https://grimspikeband.github.io/Grimspike/bio.html",
-    "logo": "https://grimspikeband.github.io/Grimspike/grimspike.png",
-    "genre": ["Hardcore","Trap","Rap","HipHop"],
-    "member": [
-      {"@type":"Person","name":"Jessica Grown","role":"Vocals"},
-      {"@type":"Person","name":"RonZ","role":"Producer / Rap Vocals"},
-      {"@type":"Person","name":"Jack NV","role":"Trumpet / Beats"}
-    ],
-    "sameAs": [
-      "https://www.facebook.com/GrimspikeBand",
-      "https://www.instagram.com/GrimspikeBand",
-      "https://twitter.com/GrimspikeBand",
-      "https://www.youtube.com/Grimspike"
-    ]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <title>Grimspike Band – Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.bio {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      padding-top: 120px;
+    }
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: 80px;
+      width: auto;
+      z-index: 100;
+    }
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .bio-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .band-story {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 50px;
+    }
+    .members {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .member-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .member-photo {
+      width: 300px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .member-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+    .member-info p {
+      margin: 0;
+      line-height: 1.5;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 40px 0;
+    }
+  </style>
 </head>
 <body class="bio">
-  <img src="grimspike.png" alt="Grimspike Logo" class="logo"/>
+  <img src="grimspike.png" alt="Grimspike Logo" class="logo">
   <nav class="menu">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="concerts.html">Concerts</a></li>
-      <li><a href="merch.html">Merch</a></li>
+        <li><a href="index.html">Home</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="vlog.html">Vlog</a></li>      <!-- ide kerüljön be -->
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="concerts.html">Concerts</a></li>
+    <li><a href="merch.html">Merch</a></li>
     </ul>
   </nav>
-
   <main class="bio-container">
     <section class="band-story">
       <h1>Grimspike – Music That Cuts Like a Blade</h1>
@@ -80,26 +100,25 @@
       <p>Grimspike gained a name in the underground scene for their brutally honest lyrics and no-holds-barred attitude. Their songs call out everyone and everything, with a grin and a fist in the air. Sonically, they fuse hardcore and gangster rap with heavy guitar riffs, Latin-infused trumpet lines, violins, synths, and a sense of melody that cuts through the noise. They don’t blend in — they stand out. Loudly.</p>
       <p>This isn’t just a band. It’s survival. A scream in the silence. A raised middle finger to the world.</p>
     </section>
-
     <section class="members">
       <div class="member-item">
-        <img src="Jessica Grown 001 .png" alt="Jessica Grown" class="member-photo"/>
+        <img src="Jessica Grown 001 .png" alt="Jessica Grown" class="member-photo">
         <div class="member-info">
           <h3>🎤 Jessica Grown – Vocals, Guitar, Bass Guitar, Piano, Keyboards</h3>
           <p>Jessica’s voice cuts like a blade, but her story cuts even deeper. Abandoned as a toddler at a church door, she was bounced from one foster home to another. The streets taught her early self-defense, sharpening her reflexes and forging her physique. Today, she maintains her fitness with running and intense cardio. Her tattoos serve as a personal chronicle, each one a testament to both good and bad memories. A multi-instrumentalist, Jessica’s talents on guitar, bass guitar, piano, and keyboards provide a rich foundation for the band’s sound. With sharp lyrics, haunting tone, and a stage presence you can’t ignore, she became the soul of Grimspike. She’s not just the frontwoman — she’s the storm, the mouthpiece, and the fire. While she experimented with drugs in her youth, she quickly recognized the danger and steered clear, ensuring she wouldn't fall down that slope.</p>
         </div>
       </div>
-      <hr/>
+      <hr>
       <div class="member-item">
-        <img src="RonZ 001.png" alt="RonZ" class="member-photo"/>
+        <img src="RonZ 001.png" alt="RonZ" class="member-photo">
         <div class="member-info">
           <h3>🎧 RonZ – Producer, Rap Vocals, Guitar, Bass Guitar</h3>
           <p>Born in Mexico to mysterious roots, RonZ was raised in the shadows of America’s concrete sprawl. On the streets, physical strength was non-negotiable, and RonZ built his body accordingly. To this day, he maintains his impressive physique through bodyweight training, and while he never formally studied martial arts, you wouldn't want to get into a street fight with him. He’s the architect of chaos — producing, mixing, and rapping with raw power. His tattoos are a chaotic tapestry, reflecting spur-of-the-moment decisions, though he's considering a full blackout sleeve and frequently reworks older pieces. He regrets nothing. A versatile musician, RonZ plays both guitar and bass guitar, contributing to the heavy riffs and rhythmic backbone of Grimspike. He brings the street into every bar and the pain into every pulse. Like Jessica, RonZ dabbled in drugs but quickly understood the peril, choosing a path of sobriety.</p>
         </div>
       </div>
-      <hr/>
+      <hr>
       <div class="member-item">
-        <img src="Jack NV 001.png" alt="Jack NV" class="member-photo"/>
+        <img src="Jack NV 001.png" alt="Jack NV" class="member-photo">
         <div class="member-info">
           <h3>🎺 Jack NV – Trumpet, Beats, and Wind Instruments</h3>
           <p>Jack NV is the bridge between past and present. A second-generation Mexican-American, raised on mariachi but baptized in punk. While his upbringing was more stable than his bandmates', he too navigated the harsh realities of street life and had to learn to defend himself. He battled drug problems in the past but has been completely sober for three years, turning his focus towards religion. His trumpet howls like a siren through the band’s sound, and his beats hit like a riot. Beyond the trumpet, Jack is proficient in almost any wind instrument and also plays marimba, adding unique sonic textures to Grimspike’s dynamic sound. He’s the misfit heartbeat of Grimspike — loud, proud, and impossible to miss.</p>
