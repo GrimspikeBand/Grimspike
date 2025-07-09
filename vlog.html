@@ -62,17 +62,11 @@
     .post-media {
       flex: 1 1 300px;
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      justify-content: center;
+      align-items: center;
     }
-    .post-media img {
+    .post-media a img {
       width: 100%;
-      border-radius: 8px;
-    }
-    .video-embed iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border: none;
       border-radius: 8px;
     }
     .post-content {
@@ -106,10 +100,7 @@
   </style>
 </head>
 <body class="vlog">
-  <!-- LOGÓ -->
   <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
-
-  <!-- MENÜ -->
   <nav class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -120,16 +111,15 @@
       <li><a href="merch.html">Merch</a></li>
     </ul>
   </nav>
-
   <main class="vlog-container">
     <h1>Grimspike Vlog</h1>
 
+    <!-- Post with embedded video, using clickable thumbnail -->
     <article class="vlog-post">
       <div class="post-media">
-        <img src="GS 014 Catfish .jpg" alt="Catfish Dreams controversy" />
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/W6E32zVp8LU" title="Catfish Dreams Vlog" allowfullscreen></iframe>
-        </div>
+        <a href="https://www.youtube.com/watch?v=W6E32zVp8LU" target="_blank" rel="noopener">
+          <img src="GS 014 Catfish .jpg" alt="Catfish Dreams controversy" />
+        </a>
       </div>
       <div class="post-content">
         <h2>“Catfish Dreams” Sparks Online Dating Controversy!</h2>
@@ -138,17 +128,17 @@
       </div>
     </article>
 
+    <!-- Post with embedded video, using clickable thumbnail -->
     <article class="vlog-post">
       <div class="post-media">
-        <img src="Acoustic conert.png" alt="Acoustic Night at The Vic" />
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/Pm9ouj5eFFA" title="Acoustic Night at The Vic" allowfullscreen></iframe>
-        </div>
+        <a href="https://www.youtube.com/watch?v=Pm9ouj5eFFA" target="_blank" rel="noopener">
+          <img src="Acoustic conert.png" alt="Acoustic Night at The Vic" />
+        </a>
       </div>
       <div class="post-content">
         <h2>Grimspike’s Epic Acoustic Night at The Vic – Full Recap!</h2>
         <p class="post-date">May 16, 2025</p>
-        <p>Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged. The crowd went wild — and this video only shows the beginning. Full live footage is being edited now, and the full concert will be released soon in parts!</p>
+        <p>Jessica Grown, RonZ, and Jack NV lit up The Vic Theatre with an acoustic set that echoed Nirvana’s iconic Unplugged. The crowd went wild — full live footage will be released soon!</p>
       </div>
     </article>
 
