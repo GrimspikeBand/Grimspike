@@ -233,3 +233,9 @@ header nav,
     padding: 10px;
   }
 }
+body.concerts main {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto !important;
+  text-align: center;
+}
