@@ -1,65 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Grimspike Band – Bio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grimspike | Concerts</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Page-specific styles for Bio */
-    body.bio {
+    /* Page-specific styles for Concerts */
+    body.concerts {
       background-color: #000;
       color: #fff;
       margin: 0;
+      padding-top: 140px;
       font-family: Arial, sans-serif;
       min-height: 100vh;
-      padding-top: 120px;
     }
-    .bio-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
+    .concerts .top-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
-    .band-story {
+    .concerts .top-gallery img {
+      width: 100%;
+      max-width: 525px;
+      border-radius: 8px;
+    }
+    .concerts h2,
+    .concerts h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .concerts h3 {
+      color: red;
       text-align: center;
-      margin-bottom: 50px;
-      line-height: 1.6;
     }
-    .band-story h1 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-    .members {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .member-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-    }
-    .member-photo {
-      flex-shrink: 0;
-      width: 300px;
-      border-radius: 4px;
-      object-fit: cover;
-    }
-    .member-info h3 {
-      margin: 0 0 10px;
-      font-size: 1.2rem;
-    }
-    .member-info p {
-      margin: 0;
-      line-height: 1.5;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #444;
-      margin: 40px 0;
+    .concerts p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
     }
   </style>
 </head>
-<body class="bio">
+<body class="concerts">
   <!-- LOGÓ -->
   <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
 
@@ -68,47 +50,53 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="music.html">Music</a></li>
-      <li><a href="vlog.html">Vlog</a></li>
       <li><a href="bio.html">Bio</a></li>
       <li><a href="concerts.html">Concerts</a></li>
       <li><a href="merch.html">Merch</a></li>
     </ul>
   </nav>
 
-  <main class="bio-container">
-    <section class="band-story">
-      <h1>Grimspike – Music That Cuts Like a Blade</h1>
-      <p>Grimspike is not your average band. Their story begins in the raw backstreets of the American urban sprawl, where founding members RonZ and Jack NV met as teenagers. RonZ was born in Mexico to non-Latin parents and moved to the U.S. as a child — the details are hazy, and deliberately so. He grew up on the edge of society, running with street kids, learning early that if you don’t fight to be heard, you’ll be drowned out. That’s where he met Jack NV, a Mexican-American kid with a trumpet in his hands and mariachi roots in his blood — though his soul leaned heavy into distortion and rebellion. At 18, they formed Grimspike, driven by a desire to build something louder, dirtier, and more honest than anything around them. Music that punches, provokes, and never apologizes.</p>
-      <p>It didn’t take long before they realized the band needed a bold, fearless voice up front — someone who could match their energy and push it even further. Enter Jessica Grown. A vocalist whose haunting past is mostly off-limits, Jessica was abandoned at a church when she was just two or three years old — “like a bag of trash,” she says. What followed was a chaotic shuffle through foster homes and institutions. But with help from what she only calls “some good people,” Jessica found a way forward. She studied music — and found her voice, one you can’t ignore.</p>
-      <p>Jessica didn’t just join the band — she became its spine. With her raw charisma, versatile vocals, and razor-sharp lyrics, she quickly stood out as more than just a frontwoman. She’s the storm. The mouthpiece. The fire.</p>
-      <p>Grimspike gained a name in the underground scene for their brutally honest lyrics and no-holds-barred attitude. Their songs call out everyone and everything, with a grin and a fist in the air. Sonically, they fuse hardcore and gangster rap with heavy guitar riffs, Latin-infused trumpet lines, violins, synths, and a sense of melody that cuts through the noise. They don’t blend in — they stand out. Loudly.</p>
-      <p>This isn’t just a band. It’s survival. A scream in the silence. A raised middle finger to the world.</p>
-    </section>
-    <section class="members">
-      <div class="member-item">
-        <img src="Jessica Grown 001 .png" alt="Jessica Grown" class="member-photo">
-        <div class="member-info">
-          <h3>🎤 Jessica Grown – Vocals, Guitar, Bass Guitar, Piano, Keyboards</h3>
-          <p>Jessica’s voice cuts like a blade, but her story cuts even deeper. Abandoned as a toddler at a church door, she was bounced through foster homes and institutions. The streets taught her self-defense early, sharpening her reflexes and forging her physique. A multi-instrumentalist, Jessica’s talents on guitar, bass guitar, piano, and keyboards provide a rich foundation for the band’s sound. With sharp lyrics, haunting tone, and a stage presence you can’t ignore, she’s the storm, the mouthpiece, and the fire. While she experimented with drugs in her youth, she quickly recognized the danger and steered clear, ensuring she wouldn't fall down that slope.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="member-item">
-        <img src="RonZ 001.png" alt="RonZ" class="member-photo">
-        <div class="member-info">
-          <h3>🎧 RonZ – Producer, Rap Vocals, Guitar, Bass Guitar</h3>
-          <p>Born in Mexico to mysterious roots, RonZ was raised in the shadows of America’s concrete sprawl. On the streets, physical strength was non-negotiable, so he built his body accordingly. He’s the architect of chaos — producing, mixing, and rapping with raw power. A versatile musician, RonZ plays both guitar and bass guitar, contributing to the heavy riffs and rhythmic backbone of Grimspike’s sound. Like Jessica, he chose a sober path.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="member-item">
-        <img src="Jack NV 001.png" alt="Jack NV" class="member-photo">
-        <div class="member-info">
-          <h3>🎺 Jack NV – Trumpet, Beats, and Wind Instruments</h3>
-          <p>Jack NV is the bridge between past and present. A second-generation Mexican-American, raised on mariachi but baptized in punk, he fuses diverse influences in every note. Beyond trumpet, Jack commands nearly any wind instrument, adding unique textures to Grimspike’s dynamic sound. He’s the misfit heartbeat of the band — loud, proud, and impossible to miss.</p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <div class="top-gallery">
+      <img src="concert1.png" alt="Concert Image 1" />
+      <img src="concert2.png" alt="Concert Image 2" />
+      <img src="concert3.png" alt="Concert Image 3" />
+    </div>
+
+    <h2>Past Shows</h2>
+    <p>January 27, 2025 – Seattle</p>
+    <p>February 3, 2025 – San Francisco</p>
+    <p>February 10, 2025 – Los Angeles</p>
+    <p>February 17, 2025 – San Diego</p>
+    <p>February 24, 2025 – Las Vegas</p>
+    <p>March 2, 2025 – Phoenix</p>
+    <p>March 8, 2025 – El Paso</p>
+    <p>March 15, 2025 – Albuquerque</p>
+    <p>March 22, 2025 – Denver</p>
+    <p>March 28, 2025 – Oklahoma City</p>
+    <p>April 4, 2025 – St. Louis</p>
+    <p>April 11, 2025 – Kansas City</p>
+    <p>April 18, 2025 – Des Moines</p>
+    <p>April 25, 2025 – Minneapolis</p>
+    <p>May 3, 2025 – Omaha</p>
+    <p>May 10, 2025 – Tulsa</p>
+    <p>May 15, 2025 – Little Rock</p>
+    <p>May 20, 2025 – Wichita</p>
+    <p>May 28, 2025 – Lincoln</p>
+    <p>June 1, 2025 – Rapid City</p>
+    <p>June 5, 2025 – Denton</p>
+    <p>June 9, 2025 – Santa Fe</p>
+    <p>June 10, 2025 – Cedar Rapids</p>
+    <p>June 12, 2025 – Bozeman</p>
+    <p>June 25, 2025 – Lawrence</p>
+
+    <h2>Upcoming Shows</h2>
+    <p>Topeka – TBA</p>
+    <p>Flagstaff – TBA</p>
+    <p>Chico – TBA</p>
+    <p>Missoula – TBA</p>
+
+    <h3>European Tour – TBA</h3>
   </main>
 </body>
 </html>
