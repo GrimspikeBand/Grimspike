@@ -61,6 +61,7 @@
     }
     .post-media {
       flex: 1 1 300px;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,6 +69,29 @@
     .post-media a img {
       width: 100%;
       border-radius: 8px;
+      display: block;
+    }
+    .post-media .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .post-media .play-button::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 0 12px 20px;
+      border-color: transparent transparent transparent #fff;
     }
     .post-content {
       flex: 2 1 400px;
@@ -100,7 +124,10 @@
   </style>
 </head>
 <body class="vlog">
+  <!-- LOGÓ -->
   <img src="grimspike.png" alt="Grimspike Logo" class="logo" />
+
+  <!-- MENÜ -->
   <nav class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -111,14 +138,16 @@
       <li><a href="merch.html">Merch</a></li>
     </ul>
   </nav>
+
   <main class="vlog-container">
     <h1>Grimspike Vlog</h1>
 
-    <!-- Post with embedded video, using clickable thumbnail -->
+    <!-- Post with embedded video, thumbnail only -->
     <article class="vlog-post">
       <div class="post-media">
         <a href="https://www.youtube.com/watch?v=W6E32zVp8LU" target="_blank" rel="noopener">
           <img src="GS 014 Catfish .jpg" alt="Catfish Dreams controversy" />
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -128,11 +157,12 @@
       </div>
     </article>
 
-    <!-- Post with embedded video, using clickable thumbnail -->
+    <!-- Post with embedded video, thumbnail only -->
     <article class="vlog-post">
       <div class="post-media">
         <a href="https://www.youtube.com/watch?v=Pm9ouj5eFFA" target="_blank" rel="noopener">
           <img src="Acoustic conert.png" alt="Acoustic Night at The Vic" />
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
