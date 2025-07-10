@@ -9,9 +9,9 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-        content="Grimspike official vlog: exclusive hardcore, trap, rap, metalcore and hip-hop clips, features, and behind-the-scenes of Jessica Grown, RonZ, and Jack NV." />
+        content="Grimspike official vlog: hardcore/trap/rap/metalcore clips, announcements, and behind-the-scenes with Jessica Grown, RonZ & Jack NV." />
   <meta name="keywords"
-        content="Grimspike vlog, hardcore vlog, trap videos, rap band videos, hip-hop behind-the-scenes, Jessica Grown, RonZ, Jack NV, talkshow takeover, AltBuzz Daily, YouTube shorts, features" />
+        content="Grimspike vlog, Jessica Grown, RonZ, Jack NV, new album announcement, Drunk as Fuck, talkshow takeover, AltBuzz Daily, Riot & Rewind, Catfish Dreams, Acoustic Night, Fuck Your Boom Boom, Italian Brainrot, Buy a Sex Bot" />
   <meta name="author" content="Grimspike Band" />
 
   <!-- Canonical & Alternate -->
@@ -23,7 +23,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Grimspike Vlog – Official Videos & Clips" />
   <meta property="og:description"
-        content="Official Grimspike vlog featuring exclusive clips, features, and behind-the-scenes content." />
+        content="Watch Grimspike’s exclusive clips, announcements, and behind-the-scenes content." />
   <meta property="og:url" content="https://grimspikeband.github.io/Grimspike/vlog.html" />
   <meta property="og:image" content="https://grimspikeband.github.io/Grimspike/show%2003.png" />
   <meta property="og:site_name" content="Grimspike Band" />
@@ -33,7 +33,7 @@
   <meta name="twitter:site" content="@GrimspikeBand" />
   <meta name="twitter:title" content="Grimspike Vlog – Official Videos & Clips" />
   <meta name="twitter:description"
-        content="Exclusive Grimspike hardcore, trap, rap & metalcore clips and behind-the-scenes. Watch now!" />
+        content="Exclusive Grimspike hardcore, trap, rap & metalcore clips and announcements." />
   <meta name="twitter:image" content="https://grimspikeband.github.io/Grimspike/show%2003.png" />
 
   <!-- Structured Data JSON-LD -->
@@ -43,7 +43,7 @@
     "@type": "WebPage",
     "name": "Grimspike Vlog",
     "url": "https://grimspikeband.github.io/Grimspike/vlog.html",
-    "description": "Official Grimspike vlog featuring hardcore, trap, rap, metalcore clips and behind-the-scenes content.",
+    "description": "Official Grimspike vlog featuring clips, announcements, and behind-the-scenes content.",
     "publisher": {
       "@type": "Organization",
       "name": "Grimspike Band",
@@ -66,6 +66,9 @@
     .vlog-post { display:flex; flex-wrap:wrap; background:#111; border-left:4px solid #e00; padding:20px; border-radius:8px; margin-bottom:40px; }
     .post-media { flex:1 1 300px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:center; }
     .post-media img { width:100%; max-width:240px; border-radius:8px; }
+    .post-media a { position:relative; display:inline-block; }
+    .post-media a .play-button { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:60px; height:60px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center; }
+    .post-media a .play-button::before { content:""; display:block; width:0; height:0; border-style:solid; border-width:12px 0 12px 20px; border-color:transparent transparent transparent #fff; }
     .post-content { flex:2 1 400px; display:flex; flex-direction:column; gap:12px; padding-left:20px; }
     .post-content h2 { margin:0; font-size:1.5rem; }
     .post-date { color:#888; font-size:0.9rem; margin:0; }
@@ -89,7 +92,27 @@
   <main class="vlog-container">
     <h1>Grimspike Vlog</h1>
 
-    <!-- 1) Talkshow Takeover – May 8, 2025 -->
+    <!-- 1) New Album Announcement – May 8, 2025 -->
+    <article class="vlog-post" data-date="2025-05-08">
+      <div class="post-media">
+        <img src="00 - 03 - Plastic Emotions.jpg" alt="Plastic Emotions cover" />
+      </div>
+      <div class="post-content">
+        <h2>Grimspike’s New Album Is Coming — But If You’re Thirsty, Hit Play Now</h2>
+        <p class="post-date">May 8, 2025</p>
+        <p>If you’ve been waiting for Grimspike to drop a full new album in 2025 — hold tight. It’s coming. But if your speakers are already twitching and your patience’s on life support, you’re in luck: the band has started releasing select tracks early on YouTube, ahead of their official rollout to Spotify and Apple Music.</p>
+        <p>That’s right — while the full album is still marinating in mayhem, a few unfiltered bangers are already live on their label’s official channel:</p>
+        <p><a href="https://www.youtube.com/watch?v=i0o7CBxyJOU" target="_blank">
+            Watch “Drunk as Fuck” on YouTube
+            <div class="play-button"></div>
+          </a>
+        </p>
+        <p>💣 Featured track: “Drunk as Fuck” — Jessica Grown and RonZ raise the bar then smash it in this alcohol-fueled anthem. “Beer, whiskey, tequila — we’re slammin’ ‘em down! Vodka and gin, got the whole damn town!” Backed by Jack NV’s trumpet chaos, this track is equal parts party, blackout, and punk sermon.</p>
+        <p>🖤 Originally published by Riot & Rewind — republished with permission in Grimspike’s official vlog.</p>
+      </div>
+    </article>
+
+    <!-- 2) Talkshow Takeover – May 8, 2025 -->
     <article class="vlog-post" data-date="2025-05-08">
       <div class="post-media">
         <img src="show 01.png" alt="Jessica takes over The Evening Blast—image 1"/>
@@ -100,17 +123,17 @@
         <h2>Jessica Grown Hijacks Talkshow, Roasts RonZ on Live TV</h2>
         <p class="post-date">May 8, 2025</p>
         <p>Last night, Grimspike turned late-night television upside down — literally. Appearing on The Evening Blast, the band was scheduled for a standard sit-down interview, but things went sideways when Jessica Grown suddenly swapped seats with the host and took over the show.</p>
-        <p>Clad in her signature punk braids and a dangerously confident grin, Jessica slid behind the desk and looked RonZ dead in the eye: “So, RonZ… how many DMs do you ignore before you reply to your own?” Cue laughter. Cue sweat. Cue RonZ trying (and mostly failing) to dodge her rapid-fire questions like: “What’s louder — our trumpet or your ego?” “Do you actually read lyrics before recording or just vibe aggressively?” “When was the last time you cried during a Disney movie? Be honest.”</p>
-        <p>To his credit, RonZ took it like a champ — or at least like a guy who knew there were no right answers. The chemistry between the two was electric, and fans are already demanding “Jessica Grown Late Night” as a spin-off series. In the end, RonZ summed it up best: “This felt less like an interview and more like an ambush. A stylish, tattooed ambush.” We’d watch it again in a heartbeat.</p>
+        <p>Clad in her signature punk braids and a dangerously confident grin, Jessica slid behind the desk and looked RonZ dead in the eye: “So, RonZ… how many DMs do you ignore before you reply to your own?” Cue laughter, cue sweat, cue RonZ trying—and mostly failing—to dodge her rapid-fire questions.</p>
         <p>🖤 Originally published by AltBuzz Daily — republished with permission in Grimspike’s official vlog.</p>
       </div>
     </article>
 
-    <!-- 2) Catfish Dreams – June 1, 2025 -->
+    <!-- 3) Catfish Dreams – June 1, 2025 -->
     <article class="vlog-post" data-date="2025-06-01">
       <div class="post-media">
         <a href="https://www.youtube.com/shorts/QekyUaaVX_4" target="_blank" rel="noopener">
           <img src="GS 014 Catfish .jpg" alt="Catfish Dreams controversy"/>
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -120,11 +143,12 @@
       </div>
     </article>
 
-    <!-- 3) Acoustic Night – May 16, 2025 -->
+    <!-- 4) Acoustic Night – May 16, 2025 -->
     <article class="vlog-post" data-date="2025-05-16">
       <div class="post-media">
         <a href="https://www.youtube.com/watch?v=Pm9ouj5eFFA" target="_blank" rel="noopener">
           <img src="Acoustic conert.png" alt="Acoustic Night at The Vic"/>
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -134,11 +158,12 @@
       </div>
     </article>
 
-    <!-- 4) Fuck Your Boom Boom – May 12, 2025 -->
+    <!-- 5) Fuck Your Boom Boom – May 12, 2025 -->
     <article class="vlog-post" data-date="2025-05-12">
       <div class="post-media">
         <a href="https://www.youtube.com/shorts/Wa_-w5Zi2e0" target="_blank" rel="noopener">
           <img src="boom-vlog.png" alt="Fuck Your Boom Boom feature"/>
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -148,11 +173,12 @@
       </div>
     </article>
 
-    <!-- 5) Italian Brainrot – May 3, 2025 -->
+    <!-- 6) Italian Brainrot – May 3, 2025 -->
     <article class="vlog-post" data-date="2025-05-03">
       <div class="post-media">
         <a href="https://www.youtube.com/shorts/GfsDbiRY8nE" target="_blank" rel="noopener">
           <img src="brainrotvlog.png" alt="Italian Brainrot"/>
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -162,11 +188,12 @@
       </div>
     </article>
 
-    <!-- 6) Buy a Sex Bot – April 25, 2025 -->
+    <!-- 7) Buy a Sex Bot – April 25, 2025 -->
     <article class="vlog-post" data-date="2025-04-25">
       <div class="post-media">
         <a href="https://www.youtube.com/shorts/29dl2RxETZw" target="_blank" rel="noopener">
           <img src="GS 002 sexbot.jpg" alt="Buy a Sex Bot feature"/>
+          <div class="play-button"></div>
         </a>
       </div>
       <div class="post-content">
@@ -175,6 +202,7 @@
         <p>On April 25, 2025, Grimspike’s Jessica Grown delivered one of the boldest lyrical statements of the decade with “Buy a Sex Bot.” This is the anti-male-gaze anthem we didn’t know we needed.</p>
       </div>
     </article>
+
   </main>
 
   <script>
